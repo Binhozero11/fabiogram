@@ -70,14 +70,24 @@ body {
 .main {
     height: 75%;
     width: 65.2%;
-    background-image: url(./imagens/instagram-pag-inicial.png);
-    background-size: cover;
     position: absolute;
     bottom: 67px;
     left: 104.5px;
     background-color: #000;
-    border-radius: 1px;
-    filter: blur(0.1px);
+}
+
+.main img {
+    width: 248px;
+    height: 436px;
+    object-fit: cover;
+    object-position: top;
+    opacity: 0;
+    transition: 2s;
+    position: absolute;
+}
+
+.main img.selected {
+    opacity: 1;
 }
 
 .right {
