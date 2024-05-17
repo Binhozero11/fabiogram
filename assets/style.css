@@ -68,7 +68,7 @@ body {
 }
 
 .main {
-    height: 74%;
+    height: 75%;
     width: 65.2%;
     background-image: url(./imagens/instagram-pag-inicial.png);
     background-size: cover;
@@ -76,7 +76,8 @@ body {
     bottom: 67px;
     left: 104.5px;
     background-color: #000;
-    border-radius: 1px;  
+    border-radius: 1px;
+    filter: blur(0.1px);
 }
 
 .right {
