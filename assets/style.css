@@ -69,16 +69,16 @@ body {
 
 .main {
     height: 75%;
-    width: 65.2%;
+    width: 66%;
     position: absolute;
     bottom: 67px;
-    left: 104.5px;
+    left: 104px;
     background-color: #000;
 }
 
 .main img {
-    width: 248px;
-    height: 436px;
+    width: 251px;
+    height: 438px;
     object-fit: cover;
     object-position: top;
     opacity: 0;
