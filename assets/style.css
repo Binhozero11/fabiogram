@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #0095f6;
+}
+
+body {
+
+    --background: #fafafa;
+    --white: #fff;
+    --black: #000;
+    --button-primary: #dbdbdb;
+    --font-padrao: 'Segoe UI', 'Roboto', Arial, Helvetica, sans-serif;
+
+
+    background-color: var(--background);
+    height: 100%;
+    font-family: var(--font-padrao);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.columns-container {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 84px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns-container_sign-up {
+    margin-top: 0;
+    padding-bottom: 37px;
+}
+
+.left {
+    background-image: url(./imagens/main-foto.png);
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: -39.9px;
+    margin: 0 22px 12px 0;
+    height: 581.141px;
+    max-width: 380.313px;
+    position: relative;
+}
+
+.main {
+    height: 74%;
+    width: 65.2%;
+    background-image: url(./imagens/instagram-pag-inicial.png);
+    background-size: cover;
+    position: absolute;
+    bottom: 67px;
+    left: 104.5px;
+    background-color: #000;
+    border-radius: 1px;  
+}
+
+.right {
+    height: 100%;
+    margin-top: 12px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column {
+    flex-grow: 1;
+    margin-top: 60px;
+}
+
+.column-sign-up {
+    margin-top: 12px;
+}
+
+.opcoesLoginCadastro {
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.login-panel {
+    background-color: var(--white);
+    border: 1px solid var(--button-primary);
+    text-align: center;
+    height: 409.99px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro-panel {
+    background-color: var(--white);
+    border: 1px solid var(--button-primary);
+    text-align: center;
+    height: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin: 36px 0 12px;
+}
+
+.logo-img {
+    width: 175px;
+    height: 51px;
+}
+
+.form-container {
+    margin-bottom: 10px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.form-container_sign-up {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.campo-de-formulario {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 268px;
+    overflow: hidden;
+}
+
+.campo-de-formulario_sign-up {
+    margin-top: 0;
+    width: 100%;
+    max-width: 350px;
+}
+
+.campo-de-formulario span {
+    font-weight: 600;
+    color: #717984;
+}
+
+.sinopse-cadastro {
+    margin: 0 40px 10px;
+    font-size: 16px;
+}
+
+input[type="password"], input[type="text"] {
+    background-color: var(--background);
+    border: 1px solid var(--button-primary);
+    height: 38px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    color: var(--black);
+}
+
+input[type="password"]::placeholder, input[type="text"]::placeholder {
+    color: #828491;
+    font-size: 12px;
+}
+
+input[type="password"]:focus, input[type="text"]:focus {
+    outline: 0;
+    border: 1px solid #a1a1a1;
+}
+
+input[type="submit"] {
+    margin: 8px 0;
+    height: 32px;
+    border: 0;
+    background-color: #4cb4f9;
+    border-radius: 10px;
+    color: var(--white);
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.paragrafo-detalhes-termos-privacidade {
+    text-align: center;
+    margin: 10px 40px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+input.input-submit-sign-up {
+    margin: 8px 40px;
+}
+
+.infobox {
+    background-color: var(--white);
+    height: 63px;
+    width: 350px;
+    border: 1px solid var(--button-primary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infobox p {
+    user-select: none;
+}
+
+.infobox p a {
+    font-weight: bold;
+    user-select: none;
+}
+
+.get-app-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.get-app-panel span {
+    margin: 10px 20px;
+}
+
+.get-app-panel p {
+    margin: 10px 20px 10px 20px;
+}
+
+.get-app-panel div {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.app-buttoms a:not(:last-child) {
+    margin-right: 8px;
+}
+
+.app-buttoms img {
+    height: 40px;
+}
+
+footer {
+    width: 100%;
+    padding: 0 16px;
+}
+
+footer a {
+    color: #737373;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 52px;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.footer-inner_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 98.1%;
+}
+
+.footer-inner_div div {
+    margin: 0 8px 12px;
+}
+
+.text-small {
+    font-size: 12px;
+    color: #777575;
+    display: block;
+    margin: 12px 0;
+    text-align: center;
+}
+
+#container-sign-up {
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.cadastro {
+    background-color: var(--white);
+    border: 1px solid var(--button-primary);
+    text-align: center;
+    height: auto;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.message {
+    margin: 10px 70px;
+}
+
+.message span {
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #8e8e8e;
+}
+
+.cta-button {
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #385185;
+    font-family: var(--font-padrao);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.cadastrarComFacebook {
+    margin: 8px 40px;
+    background-color: #0195f7;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.cta-button img {
+    width: 16px;
+    height: 16px;
+}
+
+.recuperarSenha {
+    margin-top: 12px;
+    color: #00376b;
+    font-size: 11.5px;
+}
+
+
+/* .cta-button {
+    width: 320px;
+    margin: 10px 0;
+    height: 35px;
+    background-color: #0095f6;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+} */
+
+.divisor-container {
+    display: flex;
+    justify-content: center;
+    
+    margin: 10px 0;
+}
+
+.divisor-container_sign-up {
+    margin: 10px 40px 18px;
+}
+
+.input-container {
+    margin: 0 40px 6px;
+}
+
+.input-container input {
+    margin-top: 0;
+    width: 100%;
+    font-family: var(--font-padrao);
+    padding: 8px;
+}
+
+.line {
+    height: 1px;
+    background-color: var(--button-primary);
+    width: 40%;
+    margin-top: 6.5px;
+}
+
+.divisor-tag {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 5.5%;
+    color: #767677;
+    user-select: none;
+    font-family: var(--font-padrao);
+    font-weight: 500;
+    line-height: 20px;
+}
+
+@media (min-height: 1000px) {
+    #wrapper {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 1300px) {
+    .columns-container {
+        margin-top: 32px;
+    }
+
+    .columns-container_sign-up {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    .left {
+        display: none;
+    }
+
+    .footer-inner_div {
+        width: 100%;
+        padding: 0 1.86px;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .container {
+        margin-top: 50px;
+        height: 100%;
+    }
+
+    .columns-container {
+        width: 90%;
+        flex-shrink: 1;
+        margin: auto;
+    }
+
+    .column {
+        height: auto;
+    }
+
+    .right {
+        max-width: 300px;
+        align-items: center;
+    }
+
+    .opcoesLoginCadastro {
+        width: 100%;
+    }
+
+    .message {
+        margin: 10px 25px;
+    }
+}
